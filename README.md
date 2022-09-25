@@ -52,14 +52,28 @@ Módulo 3 - Security Development - 12h
   - Hnadson criando variáveis
 
 Módulo 4 - DevOps - 16h
-▪ Integração com Git Hub
-▪ CI/CD
-▪ SNS
-▪ SQS
-▪ Microserviços
-▪ Observabilidade
-▪ SER
-▪ Monitoramento
+ - AWS Code Pipeline (CI/CD)
+   - AWS Code Commit
+      - Conceitos básicos
+   - AWS Code Deploy
+      - Conceitos básicos
+   - Handson Rodar aplicação acompanhando estagios no code pipeline
+- SNS/SQS
+  - O que é o Amazon SQS/SNS?
+  - Configurando o Amazon SQS
+    - Criando uma fila
+    - Configurar parâmetros de fila
+    - Monitorando uma fila
+    - Cases de uso
+- Arquitetura
+  - Desenho de Solução de uma problema real utilizando ferramentas aws e conceitos de desenvolvimento de software
+- Microserviços ( Duas Aulas)
+  - Application Programming Interface (API) e Serveless
+  - Tecnologias de Containers
+  - Explorando o Docker
+  - Construindo Aplicações com Docker
+  - Orquestração de Containers com Kubernetes
+  - Serverless (Lambda, Knative)
 
 Módulo 5 – TROUBLESHOOTING – 20H
 ▪ Troubleshooting de aplicações completas
