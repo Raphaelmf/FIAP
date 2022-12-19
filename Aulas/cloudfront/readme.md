@@ -6,4 +6,4 @@ Amazon CloudFront é um serviço que acelera a distribuição do conteúdo está
 
 O CloudFront distribui o conteúdo por meio de uma rede global de datacenters denominados pontos de presença ou edge locations ou POPs.
 
-![image](images/logo.png)
+![image](Images/logo.png)
