@@ -50,14 +50,23 @@ assinados.
 
 
 ## Definição de preços do CloudFront
-- **Cobrança de armazenamento em um bucket do Amazon S3**
-  - Você paga os encargos normais de armazenamento do Amazon S3 para armazenar objetos no bucket. As cobranças são exibidas na parte do Amazon S3 da sua fatura da AWS.
-- **Cobrança por fornecimento de objetos de pontos de presença**
-  - Você é cobrado pelo CloudFront quando ele responde a solicitações de seus objetos. As cobranças incluem transferência de dados para dados WebSocket do servidor para o cliente. As cobranças do CloudFront são exibidas na parte do CloudFront da fatura da AWS como região -DataTransfer-Out-Bytes.
-- **Cobrança pelo envio de dados**
-  - Você é cobrado pelo CloudFront quando os usuários transferem dados para sua origem ou função de borda, que inclui solicitações DELETE, OPTIONS, PATCH, POST e PUT. As cobranças incluem transferência de dados para dados WebSocket do cliente para o servidor
+1. **Cobrança de armazenamento em um bucket do Amazon S3**
+   - Você paga os encargos normais de armazenamento do Amazon S3 para armazenar objetos no bucket. As cobranças são exibidas na parte do Amazon S3 da sua fatura da AWS.
+2. **Cobrança por fornecimento de objetos de pontos de presença**
+   - Você é cobrado pelo CloudFront quando ele responde a solicitações de seus objetos. As cobranças incluem transferência de dados para dados WebSocket do servidor para o cliente. As cobranças do CloudFront são exibidas na parte do CloudFront da fatura da AWS como região -DataTransfer-Out-Bytes.
+3. **Cobrança pelo envio de dados**
+   - Você é cobrado pelo CloudFront quando os usuários transferem dados para sua origem ou função de borda, que inclui solicitações DELETE, OPTIONS, PATCH, POST e PUT. As cobranças incluem transferência de dados para dados WebSocket do cliente para o servidor
 
 ![image](Images/definicaoPreco.png)
 
+
+## HANDSON - Criando Distribuição
+- [Clique Aqui]()
+
+## HANDSON - Acess Identity
+- [Clique Aqui]()
+
+## HANDSON - Política de Cache
+- [Clique Aqui]()
 
 
