@@ -61,7 +61,7 @@ assinados.
 
 
 ## HANDSON - Criando Distribuição
-- [Clique Aqui]()
+- [Clique Aqui](https://github.com/Raphaelmf/FIAP/tree/main/Aulas/cloudfront/Handson_1)
 
 ## HANDSON - Acess Identity
 - [Clique Aqui]()
