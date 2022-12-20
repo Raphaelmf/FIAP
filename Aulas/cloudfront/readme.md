@@ -33,12 +33,31 @@ Obs.: Pontos de Presença (PoP, do inglês)
 - **Acelerar a entrega de conteúdo de site estático.**
   - O CloudFront pode acelerar a entrega do conteúdo estático (por exemplo, imagens, folhas de estilo, JavaScript e assim por diante) para visualizadores no mundo todo. Ao usar o CloudFront, é possível aproveitar as vantagens da rede de estrutura da AWS e dos servidores de borda do CloudFront para oferecer aos seus visualizadores uma experiência rápida, segura e confiável ao visitar seu site.
 
-- Fornecer vídeos de streaming ao vivo ou sob demanda
-- Criptografar campos específicos durante todo o processamento do sistema.
-- Personalizar na borda
-- Fornecer conteúdo privado usando personalizações do Lambda@Edge
+- **Fornecer vídeos de streaming ao vivo ou sob demanda**
+  - O CloudFront oferece várias opções de streaming de mídia para visualizadores globais, tanto de arquivos pré-gravados quanto de eventos ao vivo.
+
+- **Criptografar campos específicos durante todo o processamento do sistema.**
+  - Ao configurar o HTTPS com o CloudFront, você já terá conexões de ponta a ponta seguras com os servidores de origem. Ao adicionar criptografia no nível do campo, você poderá proteger dados específicos durante todo o processamento do sistema, além da segurança HTTPS, para que apenas determinados aplicativos na sua origem vejam os dados.
+
+- **Personalizar na borda**
+  - A execução de código sem servidor no ponto abre várias possibilidades para personalizar o conteúdo e a experiência dos espectadores com latência reduzida. Por exemplo, você pode retornar uma
+mensagem de erro personalizada quando o servidor de origem estiver inativo para manutenção para que os visualizadores não recebam uma mensagem de erro HTTP genérica. Se preferir, você
+pode usar uma função para ajudar a autorizar usuários e controlar o acesso ao seu conteúdo antes que o CloudFront encaminhe uma solicitação para a origem.
+
+- **Fornecer conteúdo privado usando personalizações do Lambda@Edge**
+  - Usar o Lambda@Edge pode ajudar você a configurar a distribuição do CloudFront para veiculação de conteúdo privado de sua própria origem personalizada, além de usar URLs assinados ou cookies
+assinados.
 
 
+## Definição de preços do CloudFront
+- **Cobrança de armazenamento em um bucket do Amazon S3**
+  - Você paga os encargos normais de armazenamento do Amazon S3 para armazenar objetos no bucket. As cobranças são exibidas na parte do Amazon S3 da sua fatura da AWS.
+- **Cobrança por fornecimento de objetos de pontos de presença**
+  - Você é cobrado pelo CloudFront quando ele responde a solicitações de seus objetos. As cobranças incluem transferência de dados para dados WebSocket do servidor para o cliente. As cobranças do CloudFront são exibidas na parte do CloudFront da fatura da AWS como região -DataTransfer-Out-Bytes.
+- **Cobrança pelo envio de dados**
+  - Você é cobrado pelo CloudFront quando os usuários transferem dados para sua origem ou função de borda, que inclui solicitações DELETE, OPTIONS, PATCH, POST e PUT. As cobranças incluem transferência de dados para dados WebSocket do cliente para o servidor
+
+![image](Images/definicaoPreco.png)
 
 
 
